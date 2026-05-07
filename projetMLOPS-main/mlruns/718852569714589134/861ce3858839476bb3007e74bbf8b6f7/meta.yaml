@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/718852569714589134/861ce3858839476bb3007e74bbf8b6f7/artifacts
+end_time: 1778066347725
+entry_point_name: ''
+experiment_id: '718852569714589134'
+lifecycle_stage: active
+run_id: 861ce3858839476bb3007e74bbf8b6f7
+run_name: languid-deer-287
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778066309608
+status: 3
+tags: []
+user_id: '21695'

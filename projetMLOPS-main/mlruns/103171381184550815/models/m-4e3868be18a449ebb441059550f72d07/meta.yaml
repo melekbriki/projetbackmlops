@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/21695.DESKTOP-E7EDRIG/Downloads/projetMLOPS-main/projetMLOPS-main/mlruns/103171381184550815/models/m-4e3868be18a449ebb441059550f72d07/artifacts
+creation_timestamp: 1778063550992
+experiment_id: '103171381184550815'
+last_updated_timestamp: 1778063568506
+model_id: m-4e3868be18a449ebb441059550f72d07
+model_type: null
+name: model
+source_run_id: 6c0a0bd6fd774969b06ca497bdb8a826
+status: 2
+status_message: null

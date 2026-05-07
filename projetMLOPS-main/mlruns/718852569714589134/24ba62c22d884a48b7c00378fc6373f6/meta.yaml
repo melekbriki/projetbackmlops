@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/718852569714589134/24ba62c22d884a48b7c00378fc6373f6/artifacts
+end_time: 1778066349304
+entry_point_name: ''
+experiment_id: '718852569714589134'
+lifecycle_stage: active
+run_id: 24ba62c22d884a48b7c00378fc6373f6
+run_name: honorable-ray-925
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778066301824
+status: 3
+tags: []
+user_id: '21695'

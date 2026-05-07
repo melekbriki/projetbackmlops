@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/718852569714589134
+creation_time: 1778065741198
+experiment_id: '718852569714589134'
+last_update_time: 1778065741198
+lifecycle_stage: active
+name: german-credit-risk
+workspace: default

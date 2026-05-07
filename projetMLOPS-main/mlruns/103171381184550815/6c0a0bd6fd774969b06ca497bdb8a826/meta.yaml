@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/21695.DESKTOP-E7EDRIG/Downloads/projetMLOPS-main/projetMLOPS-main/mlruns/103171381184550815/6c0a0bd6fd774969b06ca497bdb8a826/artifacts
+end_time: 1778063568525
+entry_point_name: ''
+experiment_id: '103171381184550815'
+lifecycle_stage: active
+run_id: 6c0a0bd6fd774969b06ca497bdb8a826
+run_name: awesome-eel-935
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778063550780
+status: 3
+tags: []
+user_id: '21695'

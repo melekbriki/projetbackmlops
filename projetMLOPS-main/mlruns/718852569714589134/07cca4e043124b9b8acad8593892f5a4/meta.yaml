@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/718852569714589134/07cca4e043124b9b8acad8593892f5a4/artifacts
+end_time: 1778066348951
+entry_point_name: ''
+experiment_id: '718852569714589134'
+lifecycle_stage: active
+run_id: 07cca4e043124b9b8acad8593892f5a4
+run_name: respected-moose-242
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778066308112
+status: 3
+tags: []
+user_id: '21695'
