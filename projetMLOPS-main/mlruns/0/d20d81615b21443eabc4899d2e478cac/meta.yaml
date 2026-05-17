@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/21695.DESKTOP-E7EDRIG/Downloads/projetMLOPS-main/projetMLOPS-main/mlruns/0/d20d81615b21443eabc4899d2e478cac/artifacts
+end_time: 1778839191407
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d20d81615b21443eabc4899d2e478cac
+run_name: rebellious-panda-495
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778839191357
+status: 3
+tags: []
+user_id: '21695'

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/718852569714589134/e53c920177eb4a1f8215bc91f0606d45/artifacts
+end_time: 1778841793736
+entry_point_name: ''
+experiment_id: '718852569714589134'
+lifecycle_stage: active
+run_id: e53c920177eb4a1f8215bc91f0606d45
+run_name: predict_adaboost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778841791268
+status: 3
+tags: []
+user_id: '21695'

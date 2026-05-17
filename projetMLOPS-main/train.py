@@ -10,6 +10,8 @@ import uvicorn
 import io
 import pickle
 from pathlib import Path
+from sklearn.ensemble import AdaBoostClassifier
+from xgboost import XGBClassifier
 
 app = FastAPI(title="German Credit Risk API")
 
@@ -90,6 +92,31 @@ def download_model(model_id: str):
         raise HTTPException(status_code=404, detail="Model not found")
     
     return {"download_url": f"/models/{model_id}", "model_id": model_id}
-
+MODELS_CONFIG = {
+    "logistic_regression": {
+        "model":  LogisticRegression(max_iter=200, random_state=42),
+        "params": {"C": [0.01, 0.1, 1, 10], "solver": ["lbfgs", "liblinear"]},
+    },
+    "random_forest": {
+        "model":  RandomForestClassifier(random_state=42),
+        "params": {"n_estimators": [50, 100, 200], "max_depth": [5, 10, None]},
+    },
+    "svm": {
+        "model":  SVC(probability=True, random_state=42),
+        "params": {"C": [0.1, 1, 10], "kernel": ["rbf", "linear"]},
+    },
+    "knn": {
+        "model":  KNeighborsClassifier(),
+        "params": {"n_neighbors": [3, 5, 7, 11], "weights": ["uniform", "distance"]},
+    },
+    "adaboost": {                                           # ← nouveau
+        "model":  AdaBoostClassifier(random_state=42),
+        "params": {"n_estimators": [50, 100, 200], "learning_rate": [0.5, 1.0, 1.5]},
+    },
+    "xgboost": {                                            # ← nouveau
+        "model":  XGBClassifier(eval_metric="logloss", random_state=42),
+        "params": {"n_estimators": [50, 100], "max_depth": [3, 5, 7], "learning_rate": [0.05, 0.1, 0.2]},
+    },
+}
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
