@@ -1,0 +1,16 @@
+creation_timestamp: 1779057489389
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1779057489389
+model_id: m-c4f6b794b7fe4849830d5cff45cd0abb
+name: credit_logistic_regression
+run_id: 474ce7ee383c41fc9fd308b6e76331d2
+run_link: ''
+source: models:/m-c4f6b794b7fe4849830d5cff45cd0abb
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/718852569714589134/models/m-c4f6b794b7fe4849830d5cff45cd0abb/artifacts
+user_id: null
+version: 3
+workspace: default

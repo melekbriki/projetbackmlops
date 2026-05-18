@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/108875109968243232/285e71121147438c8a2124b02f0fea1a/artifacts
+end_time: 1779054004135
+entry_point_name: ''
+experiment_id: '108875109968243232'
+lifecycle_stage: active
+run_id: 285e71121147438c8a2124b02f0fea1a
+run_name: ks_test_drift_check
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779054003709
+status: 3
+tags: []
+user_id: '21695'

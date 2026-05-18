@@ -1,0 +1,8 @@
+feature,ks_stat,p_value,drifted
+Duration,0.3925,0.0,True
+CreditAmount,0.2788,0.0,True
+InstallmentRate,0.675,0.0,True
+ResidenceDuration,0.0375,0.9746,False
+Age,0.07,0.4024,False
+ExistingCredits,0.0275,0.9996,False
+PeopleLiable,0.025,0.9999,False

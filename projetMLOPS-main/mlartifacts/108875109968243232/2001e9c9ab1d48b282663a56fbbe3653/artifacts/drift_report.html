@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Data Drift Report — German Credit Risk</title>
+  <style>
+    body      { font-family: Arial, sans-serif; background: #0f172a; color: #f1f5f9; padding: 2rem; }
+    h1        { color: #60a5fa; margin-bottom: 0.5rem; }
+    p         { color: #94a3b8; margin-bottom: 1.5rem; }
+    .summary  { display: flex; gap: 2rem; margin-bottom: 2rem; }
+    .card     { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 1.5rem 2rem; }
+    .card h2  { margin: 0; font-size: 2rem; }
+    .card span{ font-size: 0.85rem; color: #94a3b8; }
+    .red      { color: #f87171; }
+    .green    { color: #4ade80; }
+    table     { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 12px; overflow: hidden; }
+    th        { background: #1e3a5f; padding: 12px 16px; text-align: left; color: #93c5fd; }
+    td        { padding: 10px 16px; border-bottom: 1px solid #334155; }
+    .drifted  { color: #f87171; font-weight: bold; }
+    .ok       { color: #4ade80; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>📊 Data Drift Report — German Credit Risk</h1>
+  <p>Méthode : Kolmogorov-Smirnov test | Seuil p-value : 0.05</p>
+
+  <div class="summary">
+    <div class="card">
+      <h2 class="red">42.9%</h2>
+      <span>Drift Share Global</span>
+    </div>
+    <div class="card">
+      <h2 class="red">3</h2>
+      <span>Features Driftées</span>
+    </div>
+    <div class="card">
+      <h2>7</h2>
+      <span>Features Totales</span>
+    </div>
+    <div class="card">
+      <h2 class="red">
+        🔴 CRITIQUE
+      </h2>
+      <span>Statut Global</span>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <th>Feature</th>
+      <th>KS Statistique</th>
+      <th>P-Value</th>
+      <th>Statut</th>
+    </tr>
+    
+        <tr>
+            <td>Duration</td>
+            <td>0.3775</td>
+            <td>0.0</td>
+            <td class='drifted'>🔴 Drifted</td>
+        </tr>
+        <tr>
+            <td>CreditAmount</td>
+            <td>0.2788</td>
+            <td>0.0</td>
+            <td class='drifted'>🔴 Drifted</td>
+        </tr>
+        <tr>
+            <td>InstallmentRate</td>
+            <td>0.675</td>
+            <td>0.0</td>
+            <td class='drifted'>🔴 Drifted</td>
+        </tr>
+        <tr>
+            <td>ResidenceDuration</td>
+            <td>0.0375</td>
+            <td>0.9746</td>
+            <td class='ok'>🟢 Stable</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>0.07</td>
+            <td>0.4024</td>
+            <td class='ok'>🟢 Stable</td>
+        </tr>
+        <tr>
+            <td>ExistingCredits</td>
+            <td>0.0275</td>
+            <td>0.9996</td>
+            <td class='ok'>🟢 Stable</td>
+        </tr>
+        <tr>
+            <td>PeopleLiable</td>
+            <td>0.025</td>
+            <td>0.9999</td>
+            <td class='ok'>🟢 Stable</td>
+        </tr>
+  </table>
+</body>
+</html>

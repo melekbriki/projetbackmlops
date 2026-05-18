@@ -1,0 +1,16 @@
+creation_timestamp: 1779057603667
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1779057603667
+model_id: m-bf3e3f2b65d84a469e9f0cb9c987a924
+name: credit_xgboost
+run_id: bd9b06859ece4c1f9ad546ecf2796f10
+run_link: ''
+source: models:/m-bf3e3f2b65d84a469e9f0cb9c987a924
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/718852569714589134/models/m-bf3e3f2b65d84a469e9f0cb9c987a924/artifacts
+user_id: null
+version: 4
+workspace: default

@@ -1,0 +1,16 @@
+creation_timestamp: 1779057426901
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1779057426901
+model_id: m-d7f2739e655844149b6b9aa35dad7b6d
+name: credit_knn
+run_id: ab517069a42645c3bdbfb481bccd03dc
+run_link: ''
+source: models:/m-d7f2739e655844149b6b9aa35dad7b6d
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/718852569714589134/models/m-d7f2739e655844149b6b9aa35dad7b6d/artifacts
+user_id: null
+version: 2
+workspace: default

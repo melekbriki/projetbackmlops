@@ -1,0 +1,50 @@
+#!/bin/bash
+# pre-commit hook — Validation du modèle avant commit
+echo "🔍 Validation MLOps pre-commit..."
+
+python -c "
+import requests, sys
+
+# Test 1 : API accessible
+try:
+    r = requests.get('http://localhost:8000/ping', timeout=3)
+    assert r.status_code == 200
+    print('  ✅ API accessible')
+except:
+    print('  ⚠️  API non accessible — skip validation API')
+
+# Test 2 : MLflow accessible
+try:
+    import mlflow
+    from mlflow.tracking import MlflowClient
+    mlflow.set_tracking_uri('http://localhost:5000')
+    client = MlflowClient()
+    exp = client.get_experiment_by_name('german-credit-risk')
+    if exp:
+        runs = client.search_runs(
+            experiment_ids=[exp.experiment_id],
+            order_by=['metrics.accuracy DESC'],
+            max_results=1
+        )
+        if runs:
+            acc = runs[0].data.metrics.get('accuracy', 0)
+            assert acc > 70, f'Accuracy trop faible: {acc:.1f}% < 70%'
+            print(f'  ✅ Meilleur modèle : accuracy={acc:.1f}%')
+        else:
+            print('  ⚠️  Aucun run MLflow trouvé — skip')
+    else:
+        print('  ⚠️  Expérience MLflow non trouvée — skip')
+except AssertionError as e:
+    print(f'  ❌ VALIDATION ÉCHOUÉE : {e}')
+    sys.exit(1)
+except Exception as e:
+    print(f'  ⚠️  MLflow non accessible — skip ({e})')
+"
+
+if [ $? -ne 0 ]; then
+    echo "❌ COMMIT REFUSÉ : validation MLOps échouée"
+    exit 1
+fi
+
+echo "✅ Validation pre-commit OK — commit autorisé"
+exit 0

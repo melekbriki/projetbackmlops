@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/108875109968243232
+creation_time: 1779053609942
+experiment_id: '108875109968243232'
+last_update_time: 1779053609942
+lifecycle_stage: active
+name: monitoring_drift
+workspace: default

@@ -1,0 +1,16 @@
+creation_timestamp: 1779057417583
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1779057417583
+model_id: m-846db13ff8ba4662a815bb079af5aa2c
+name: credit_svm
+run_id: 7e48efaa70464aaaa8a9b5e1ea845ea7
+run_link: ''
+source: models:/m-846db13ff8ba4662a815bb079af5aa2c
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/718852569714589134/models/m-846db13ff8ba4662a815bb079af5aa2c/artifacts
+user_id: null
+version: 2
+workspace: default
