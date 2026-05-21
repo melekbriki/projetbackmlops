@@ -1,0 +1,16 @@
+creation_timestamp: 1779356015338
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1779356015338
+model_id: m-5c232d52260242959a84509cc0c5a6cb
+name: credit_adaboost
+run_id: 1d6015d87221477a9d05e4162e7fbe99
+run_link: ''
+source: models:/m-5c232d52260242959a84509cc0c5a6cb
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/718852569714589134/models/m-5c232d52260242959a84509cc0c5a6cb/artifacts
+user_id: null
+version: 6
+workspace: default

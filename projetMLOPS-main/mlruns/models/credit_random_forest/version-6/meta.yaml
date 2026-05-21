@@ -1,0 +1,16 @@
+creation_timestamp: 1779355992734
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1779355992734
+model_id: m-137c729753924fa9ae538cff29820c04
+name: credit_random_forest
+run_id: 276390290ac644ef9724d03f7a48168e
+run_link: ''
+source: models:/m-137c729753924fa9ae538cff29820c04
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/718852569714589134/models/m-137c729753924fa9ae538cff29820c04/artifacts
+user_id: null
+version: 6
+workspace: default
